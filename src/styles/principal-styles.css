@@ -1,0 +1,44 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#titleBar{
+color: #fff;
+font: 1em sans-serif;
+font-size: large;
+background-color: rgba(122, 205, 215, 0.71);
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+}
+#titleBar #title{
+    -webkit-app-region: drag;
+    width: 85%;
+
+}
+#btnAction button{
+    width: 15px;
+    height: 15px;
+}
+#maximizeBtn{
+    background-image: url("/src/img/Icons/maximize.png");
+    background-size: contain;
+}
+#minimizeBtn{
+    background-image: url("/src/img/Icons/minimize.png");
+    background-size: contain;
+}
+#closeBtn{
+    background-image: url("/src/img/Icons/close.png");
+    background-size: contain;
+}
+#logo{
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+}
+body{
+    background-image: url(/src/img/Fondo.webp);
+}
