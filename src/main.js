@@ -21,6 +21,13 @@ function createWindow() {
         win.minimize()
     })
 
+    ipcMain.on('maximizeApp', () => {
+        win.maximize()
+    })
+    ipcMain.on('closeApp', () => {
+        win.close()
+    })
+
 }
 
 app.whenReady().then(() => {
