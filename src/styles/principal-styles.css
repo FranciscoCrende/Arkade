@@ -5,7 +5,7 @@
     list-style: none;
 }
 body{
-    background-image: url(/src/img/Fondo.webp);
+    background-image: url(../img/Fondo.webp);
     background-repeat: no-repeat;
 }
 #titleBar{
@@ -28,15 +28,15 @@ flex-direction: row;
     cursor: pointer;
 }
 #maximizeBtn{
-    background-image: url("/src/img/Icons/maximize.png");
+    background-image: url("../img/Icons/maximize.png");
     background-size: contain;
 }
 #minimizeBtn{
-    background-image: url("/src/img/Icons/minimize.png");
+    background-image: url("../img/Icons/minimize.png");
     background-size: contain;
 }
 #closeBtn{
-    background-image: url("/src/img/Icons/close.png");
+    background-image: url("../img/Icons/close.png");
     background-size: contain;
 }
 #logo{
