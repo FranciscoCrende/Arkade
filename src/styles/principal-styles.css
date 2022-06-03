@@ -4,10 +4,16 @@
     padding: 0;
     list-style: none;
 }
+font-face {
+    font-family: fuenteAgregada;
+    src: url(../ARCADECLASSIC.TTF);
+}
 body{
+    font-family: fuenteAgregada;
     background-image: url(../img/Fondo.webp);
     background-repeat: no-repeat;
 }
+
 #titleBar{
 color: #fff;
 font: 1em sans-serif;
