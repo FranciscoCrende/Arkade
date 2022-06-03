@@ -4,6 +4,10 @@
     padding: 0;
     list-style: none;
 }
+body{
+    background-image: url(/src/img/Fondo.webp);
+    background-repeat: no-repeat;
+}
 #titleBar{
 color: #fff;
 font: 1em sans-serif;
@@ -16,11 +20,12 @@ flex-direction: row;
 #titleBar #title{
     -webkit-app-region: drag;
     width: 85%;
-
+    cursor: pointer;
 }
 #btnAction button{
     width: 15px;
     height: 15px;
+    cursor: pointer;
 }
 #maximizeBtn{
     background-image: url("/src/img/Icons/maximize.png");
@@ -37,8 +42,38 @@ flex-direction: row;
 #logo{
     color: #fff;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
+    height: 40px;
+    width: 100%
 }
-body{
-    background-image: url(/src/img/Fondo.webp);
+#slider-games{
+    top: 20px;
+    margin: auto;
+    width: 300px;
+    position: relative;
+    border: solid #fff;
+}
+#slider-games .slider{
+    display: flex;
+}
+#slider-games .slider .slider-img img{
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+.slider-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.slider-btn--right{
+    right: 10px;
 }
