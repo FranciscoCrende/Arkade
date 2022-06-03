@@ -7,7 +7,7 @@
 body {
     font-family: fuenteAgregada;
     margin: 0;
-    background: url(src/img/Fondo.webp);
+    background: url(/src/img/Fondo.webp);
     background-size: cover;
     background-attachment: fixed;
 }
