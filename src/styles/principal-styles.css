@@ -4,9 +4,9 @@
     padding: 0;
     list-style: none;
 }
-font-face {
+@font-face {
     font-family: fuenteAgregada;
-    src: url(../ARCADECLASSIC.TTF);
+    src: url(../styles/ARCADECLASSIC.TTF);
 }
 body{
     font-family: fuenteAgregada;
