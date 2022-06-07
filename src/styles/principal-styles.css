@@ -4,9 +4,9 @@
     padding: 0;
     list-style: none;
 }
-font-face {
+@font-face {
     font-family: fuenteAgregada;
-    src: url(../ARCADECLASSIC.TTF);
+    src: url(/ARCADECLASSIC.TTF);
 }
 body{
     font-family: fuenteAgregada;
@@ -52,8 +52,30 @@ flex-direction: row;
     height: 40px;
     width: 100%
 }
+.insert-coin{
+  position: absolute;
+  height: 90px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-shadow: -2px 0 0 #fdff2a,
+    -4px 0 0 #df4a42,
+    2px 0 0 #91fcfe,
+    4px 0 0 #4405fc;
+  animation: blink 1s steps(4, start) infinite;
+}
+@keyframes blink{
+    to
+        visibility: hidden;
+}
+
+
 #slider-games{
-    top: 20px;
+    top: 80px;
     margin: auto;
     width: 300px;
     position: relative;
