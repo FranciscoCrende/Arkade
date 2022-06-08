@@ -1,6 +1,6 @@
 @font-face {
     font-family: fuenteAgregada;
-    src: url(/ARCADECLASSIC.TTF);
+    src: url(../styles/ARCADECLASSIC.TTF);
 }
 
 
@@ -27,6 +27,9 @@ h1{
     text-align: center;
     color: #1a2537;
     font-size: 40px;
+    background: linear-gradient(hsl(241, 53%, 27%) ,#258fe2  );
+    -webkit-background-clip: text;
+    color: transparent;
 }
 input[type="text"],
 input[type="password"]{
@@ -55,6 +58,8 @@ input[type="password"]{
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
+    background: linear-gradient( #258fe2 ,#212068  );
+      
 }
 .button:hover{
     background: cadetblue;
@@ -66,12 +71,16 @@ p{
     text-decoration: none;
     color: #1a2537;
     font-weight: 600;
+    background: linear-gradient(hsl(241, 53%, 27%) ,#258fe2  );
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 input {
     font-family: fuenteAgregada;
     
 }
+
 
 
 .link:hover{
