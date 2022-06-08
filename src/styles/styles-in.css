@@ -19,7 +19,7 @@ body {
     padding: 15px;
 }
 .formulario{
-    background: #fff;
+    background:  #ececf2 ;
     margin-top: 150px;
     padding: 3px;
 }
@@ -78,6 +78,7 @@ p{
 
 input {
     font-family: fuenteAgregada;
+    
     
 }
 
