@@ -2,10 +2,9 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 100%;
 }
 .titleBar .title {
-    width: 85%;
+    width: 100%;
     -webkit-app-region: drag;
   }
   .title h1{
