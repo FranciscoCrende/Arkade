@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    color: #fff;
 }
 @font-face {
     font-family: fuenteAgregada;
@@ -13,91 +14,37 @@ body{
     background-image: url(../img/Fondo.webp);
     background-repeat: no-repeat;
 }
-
-#titleBar{
-color: #fff;
-font: 1em sans-serif;
-font-size: large;
-background-color: rgba(122, 205, 215, 0.71);
-display: flex;
-justify-content: space-between;
-flex-direction: row;
-}
-#titleBar #title{
-    -webkit-app-region: drag;
-    width: 85%;
+.title-games{
+    margin: 10px;
+    font-size: 30px;
     cursor: pointer;
 }
-#btnAction button{
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
+.title-games:hover{
+    font-size: 33px;
 }
-#maximizeBtn{
-    background-image: url("../img/Icons/maximize.png");
-    background-size: contain;
+.enter{
+    font-size: 50px;
+    background: linear-gradient(hsl(320, 65%, 39%) ,#258fe2  );
+    -webkit-background-clip: text;
+    color: transparent;
 }
-#minimizeBtn{
-    background-image: url("../img/Icons/minimize.png");
-    background-size: contain;
-}
-#closeBtn{
-    background-image: url("../img/Icons/close.png");
-    background-size: contain;
+.container-menu{
+    margin-top: 40px;
+    text-align: center;
 }
 #logo{
-    color: #fff;
+    font-size: 60px;
     text-align: center;
     margin-top: 40px;
-    height: 40px;
     width: 100%
 }
-.insert-coin{
-  position: absolute;
-  height: 90px;
-  color: white;
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  font-size: 40px;
-  line-height: 40px;
-  letter-spacing: 5px;
-  text-shadow: -2px 0 0 #fdff2a,
-    -4px 0 0 #df4a42,
-    2px 0 0 #91fcfe,
-    4px 0 0 #4405fc;
-  animation: blink 1s steps(4, start) infinite;
-}
-
-
-#slider-games{
-    top: 80px;
-    margin: auto;
-    width: 300px;
-    position: relative;
-    border: solid #fff;
-}
-#slider-games .slider{
-    display: flex;
-}
-#slider-games .slider .slider-img img{
-    height: 100%;
-    display: block;
+.img-games{
     width: 100%;
-}
-.slider-btn{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: monospace;
+    height: 500px;
     text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
 }
-.slider-btn--right{
-    right: 10px;
+.img-games img{
+    border: solid #fff;
+    width: 30%;
+    margin: 20px;
 }

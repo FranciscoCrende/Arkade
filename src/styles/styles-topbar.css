@@ -1,0 +1,57 @@
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+.titleBar .title {
+    width: 85%;
+    -webkit-app-region: drag;
+  }
+  .title h1{
+      color: white;
+  }
+  .titleBarBtns{
+      width: 15%;
+  }
+  .titleBarBtns .topBtn {
+    float: right;
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  .titleBarBtns .topBtn:hover {
+    background-color: #272C36;
+  }
+  
+  
+  .titleBarBtns .minimizeBtn {
+    background-image: url('../img/Icons/icon_minimize.png');
+    background-size: contain;
+  }
+  
+  .titleBarBtns .maximizeBtn {
+    background-image: url('../img/Icons/icon_maximize.png');
+    background-size: contain;
+  }
+  
+  .titleBarBtns .restoreBtn {
+    background-image: url('../img/Icons/icon_restore.png');
+    background-size: contain;
+  }
+  
+  .titleBarBtns .closeBtn {
+    background-image: url('../img/Icons/icon_close.png');
+    background-size: contain;
+  }
+  
+  .titleBarBtns .closeBtn:hover {
+    background-color: #ee4f4f;
+  }
+
