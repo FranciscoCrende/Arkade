@@ -1,5 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require ('electron');
-
+const path = require('path')
 
 function createWindow() {
     const win = new BrowserWindow({
@@ -17,16 +17,25 @@ function createWindow() {
     //win.loadFile('src/index.html');
     win.loadFile('src/view/principal.html');
     win.webContents.openDevTools()
+
     ipcMain.on('minimizeApp', () => {
         win.minimize()
     })
 
-    ipcMain.on('maximizeApp', () => {
-        win.maximize()
+    ipcMain.on('maximizeRestoreApp', () => {
+        if (win.isMaximized()) win.unmaximize()
+        else win.maximize()
     })
     ipcMain.on('closeApp', () => {
         win.close()
     })
+
+    win.on("maximize", () => {
+        win.webContents.send("isMaximized")
+      })
+      win.on("unmaximize", () => {
+        win.webContents.send("isRestored")
+      })
 
 }
 
