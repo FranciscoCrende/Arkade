@@ -13,7 +13,7 @@ function createWindow() {
         }
     })
 
-    win.loadFile("principal.html")
+    win.loadFile("log-in.html")
     ipcMain.on('minimizeApp', () => {
         win.minimize()
     })
