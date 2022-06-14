@@ -1,14 +1,17 @@
 .topBar{
+  height: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-.titleBar .title {
-    width: 100%;
-    -webkit-app-region: drag;
-  }
-  .title h1{
+  .titleText{
       color: white;
+      margin: 0;
+      padding-left: 10px;
   }
   .titleBarBtns{
       width: 15%;
