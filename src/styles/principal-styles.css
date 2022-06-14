@@ -9,6 +9,14 @@
     font-family: fuenteAgregada;
     src: url(../styles/ARCADECLASSIC.TTF);
 }
+.money{
+    width: 50px;
+    height: 15px;
+    float: right;
+}
+.money img{
+    width: 10px;
+}
 body{
     font-family: fuenteAgregada;
     background-image: url(../img/Fondo.webp);
