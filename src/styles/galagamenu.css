@@ -1,0 +1,54 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+}
+@font-face {
+    font-family: fuenteAgregada;
+    src: url(../styles/ARCADECLASSIC.TTF);
+}
+body{
+    font-family: fuenteAgregada;
+    background-image: url(../img/Fondo.webp);
+    background-repeat: no-repeat;
+}
+.options-menu{
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.options-menu:hover{
+    font-size: 33px;
+}
+.enter-menu{
+    font-size: 50px;
+    background: linear-gradient(hsl(320, 65%, 39%) ,#258fe2  );
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.container-menus{
+    margin-top: 40px;
+    text-align: center;
+}
+#logo{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%
+}
+.img-games{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+.img-games img{
+    border: solid #fff;
+    width: 30%;
+    margin: 20px;
+}
+
