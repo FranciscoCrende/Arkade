@@ -13,6 +13,14 @@ body{
     background-image: url(../img/Fondo.webp);
     background-repeat: no-repeat;
 }
+.back{
+    font-size: 15px;
+    color: #fff;
+    margin-top: 40px;
+}
+.back a:hover{
+    font-size: 20px;
+}
 .container{
     width: 100%;
     height: 100%;
