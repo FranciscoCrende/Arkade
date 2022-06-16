@@ -12,8 +12,8 @@ function createWindow() {
             contextIsolation:false
         }
     })
-
-    win.loadFile("log-in.html")
+    
+    win.loadFile("principal.html")
     ipcMain.on('minimizeApp', () => {
         win.minimize()
     })

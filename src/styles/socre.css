@@ -1,0 +1,66 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@font-face {
+    font-family: fuenteAgregada;
+    src: url(../styles/ARCADECLASSIC.TTF);
+}
+body{
+    font-family: fuenteAgregada;
+    background-image: url(../img/Fondo.webp);
+    background-repeat: no-repeat;
+}
+#logo{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%
+}
+.money{
+    color: #fff;
+    width: 50px;
+    height: 15px;
+    float: right;
+}
+.money img{
+    width: 10px;
+}
+.container-score{
+    font-size: 25px;
+    width: 350px;
+    height: 350px;
+    color: #fff;
+    margin: auto;
+}
+.hiscore{
+    display: flex;
+    width: 400px;
+    margin: auto;
+    color: rgb(3, 169, 164);
+}
+h2{
+    padding: 10px;
+    font-size: 20px;
+}
+.container-score table{
+    padding: 0px;
+}
+th, td{
+    padding: 20px;
+}
+.fila1{
+    color: rgb(195, 0, 123);
+}
+.fila2{
+    color: rgb(170, 0, 0);
+}
+.fila3{
+    color: rgb(134, 161, 0);
+}
+.fila4{
+color: rgb(0, 38, 152);
+}
