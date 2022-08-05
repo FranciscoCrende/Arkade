@@ -24,40 +24,40 @@ La maquina de Arcade consistira en 3 juegos "retro" (Galaga, Snake y Donkey Kong
 #### **TAREAS ESPECIFICAS**
 
    Menu:
-        ✔️Interfaz grafica menú
-        ✔️Funcionalidad botones 
-        ❌Creacion del logo 
+    ✔️  Interfaz grafica menú
+    ✔️  Funcionalidad botones 
+    ❌  Creacion del logo 
 
 
    Login/register:
-        ✔️Creación de formulario
-        ✔️Estilos de formulario 
-        ❌Conexion a BD previamente creada 
-        ✔️Funcionalidad botones
+    ✔️  Creación de formulario
+    ✔️  Estilos de formulario 
+    ❌  Conexion a BD previamente creada 
+    ✔️  Funcionalidad botones
 
 
    Menu-tienda:
 
- ❌Conexion a BD previamente creada 
- ❌Funcionalidad botones 
- ❌Creción de moneda virtual
- ❌Creación de items y skins
- ✔️Estilos de tienda
+    ❌  Conexion a BD previamente creada 
+    ❌  Funcionalidad botones 
+    ❌  Creción de moneda virtual
+    ❌  Creación de items y skins
+    ✔️  Estilos de tienda
 
 
    Menu-score:
- ❌Conexion a BD previamente creada 
- ✔️Estilos tabla de score
- ❌Conexión con contador de puntos en partida
+    ❌  Conexion a BD previamente creada 
+    ✔️  Estilos tabla de score
+    ❌  Conexión con contador de puntos en partida
 
    Juegos:
-        ❌Descarga e instalacion de motor gráfico
-        ❌Creació de personajes
-        ❌Creación de entorno de juego 
-        ❌Funcionaldad del personaje 
-        ❌Interacción del personaje con el entorno 
-        ❌Creación contador de puntos
-        ❌Creació de menu interactivo de juego  
+    ❌  Descarga e instalacion de motor gráfico
+    ❌  Creació de personajes
+    ❌  Creación de entorno de juego 
+    ❌  Funcionaldad del personaje 
+    ❌  Interacción del personaje con el entorno 
+    ❌  Creación contador de puntos
+    ❌  Creació de menu interactivo de juego  
 
 
     INTERACCION CON GITHUB:
