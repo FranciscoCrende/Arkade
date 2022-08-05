@@ -1,4 +1,4 @@
-### ## **SIMIL MAQUINA DE ARCADE EN COMPUTADORA **
+#### **SIMIL MAQUINA DE ARCADE EN COMPUTADORA**
 
 Como proyecto principla del Laboratorio de construcción de sofware decidimos realizar de cero una maquina de arcade emulada en computadora con el fin del entretenimiento.
 
@@ -64,6 +64,6 @@ La maquina de Arcade consistira en 3 juegos "retro" (Galaga, Snake y Donkey Kong
     ❌  Creació de menu interactivo de juego  
 
 
-INTERACCION CON GITHUB:
+#### **INTERACCION CON GITHUB:**
 
 Se trabajara, **SIEMPRE**, en diferentes branchs, y cada vez que se termine de utilizar una branch se subira al repositorio principal de github (git commit y git push) con un comentario descriptivo. Es muy importante respetar el orden de las tareas ya que ,si no, se generaran conflictos innecesarios. Las branchs una vez que se terminen de utilizar se borraran y se creara una nueva con diferente proposito.
