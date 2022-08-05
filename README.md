@@ -13,12 +13,12 @@ La maquina de Arcade consistira en 3 juegos "retro" (Galaga, Snake y Donkey Kong
 
 
 #### **TAREAS PRINCIPALES**
-    ✔️Inicializacion del proyecto
-    ✔️Adhesion de colaborades 
-    ✔️Crecion de carpetas e instalacion de Electron 
-    ✔️Creación y funcionalidad ventana de sistema
-    ❌Utilizacion unicamente del teclado para el control del software 
-    ❌Creacion y conexión a MongoDB
+-    ✔️Inicializacion del proyecto
+-    ✔️Adhesion de colaborades 
+-    ✔️Crecion de carpetas e instalacion de Electron 
+-    ✔️Creación y funcionalidad ventana de sistema
+-    ❌Utilizacion unicamente del teclado para el control del software 
+-    ❌Creacion y conexión a MongoDB
 
 
 #### **TAREAS ESPECIFICAS**
