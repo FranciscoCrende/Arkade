@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import "../styles/styles-in.css"
 function Login() {
     return (
         <form className="formulario">
