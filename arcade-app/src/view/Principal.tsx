@@ -4,7 +4,7 @@ function Principal() {
     return (
         <div>
             <div className="money">
-                <img src="../img/coin.png" alt="">1244</img>
+                <img src="../img/coin.png" alt="" />
             </div>
             <div id="logo">
                 <h1>ARKADE</h1>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/galaga.css"
 function GalagaMenu() {
     return (
         <div className="container-galaga-menu">
