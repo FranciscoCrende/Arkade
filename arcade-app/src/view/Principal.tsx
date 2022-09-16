@@ -37,6 +37,7 @@ function Principal() {
                     <li className="title-games"><a href="../view/score.html">{menuSeleccionado == 3 && ">"}SCORE</a></li>
                 </ul>
             </div>
+            
         </div>
     )
 
