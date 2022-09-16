@@ -13,8 +13,6 @@ function createWindow() {
             contextIsolation:false
         }
     })
-   
-    //win.loadFile('src/login.html');
     win.loadURL('http://localhost:3000');
     win.webContents.openDevTools()
 
