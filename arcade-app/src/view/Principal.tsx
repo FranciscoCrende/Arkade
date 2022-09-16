@@ -1,6 +1,5 @@
 import React from 'react';
 import "../styles/principal-styles.css"
-
 function Principal() {
     return (
         <div>
