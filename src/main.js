@@ -15,7 +15,7 @@ function createWindow() {
     })
    
     //win.loadFile('src/login.html');
-    win.loadFile('src/view/log-in.html');
+    win.loadURL('http://localhost:3000');
     win.webContents.openDevTools()
 
     ipcMain.on('minimizeApp', () => {
