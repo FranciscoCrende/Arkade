@@ -40,9 +40,57 @@ body{
     margin-top: 40px;
     text-align: center;
 }
-#logo{
-    font-size: 60px;
+
+
+.letter-container{
+    
+    padding: 10px;
     text-align: center;
-    margin-top: 40px;
-    width: 100%
-}
+    margin: auto;
+  }
+  
+  .letter{ 
+    color: white;
+    font-size: 50px;
+    animation: letter-shadow infinite 2.5s linear;
+  }
+  
+  .delay0{
+    animation-delay: 0.5s
+  }
+  .delay1{
+    animation-delay: 1s
+  }.delay2{
+    animation-delay: 1.5s
+  }.delay3{
+    animation-delay: 2s
+  }.delay4{
+    animation-delay: 2.5s
+  }
+  
+
+  @keyframes letter-shadow {
+    from{
+      text-shadow: 2px 2px 50px magenta;
+    }
+  
+    20% {
+      text-shadow: 2px 2px 50px blue;
+    } 
+    
+    40% {
+      text-shadow: 2px 2px 50px green;
+    }
+  
+    60% {
+      text-shadow: 2px 2px 50px magenta;
+    }
+  
+    80% {
+      text-shadow: 2px 2px 50px turquoise;
+    }
+  
+    to {
+      text-shadow: 2px 2px 50px magenta;
+    }
+  }

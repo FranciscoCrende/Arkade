@@ -24,8 +24,19 @@ function Principal() {
             <div className="money">
                 <img src="../img/coin.png" alt="" />
             </div>
-            <div id="logo">
-                <h1>ARKADE</h1>
+
+
+
+            <div className='letter-container'>
+              {["A","R","K","A","D","E"].map((letter, i) =>
+
+              <span className={
+              
+              ["letter", `delay${i}`].join(" ")}>{letter}</span>
+              )
+           
+              }
+                
             </div>
             <div className="container-menu">
                 <ul>
@@ -36,11 +47,10 @@ function Principal() {
                     <li className="title-games"><a href="../view/score.html">{menuSeleccionado == 3 && ">"}SCORE</a></li>
                 </ul>
             </div>
-            
+              
         </div>
     )
 
 }
 
 export default Principal;
-

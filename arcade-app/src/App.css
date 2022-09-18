@@ -1,11 +1,7 @@
-.App {
+ .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -28,11 +24,51 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.letter-container{
+  padding: 10px;
+  text-align: center;
+}
+
+.letter{
+  color: aqua;
+  animation: letter-shadow infinite 2.5 linear;
+}
+
+.delay0{
+  animation-delay: 0.5s;
+}
+.delay1{
+  animation-delay: 1s;
+}.delay2{
+  animation-delay: 1.5s;
+}.delay3{
+  animation-delay: 2s;
+}.delay4{
+  animation-delay: 2.5s;
+}
+
+@keyframes letter-shadow {
+  from{
+    text-shadow: 2px 2px 25px magenta;
   }
+
+  20% {
+    text-shadow: 2px 2px 25px blue;
+  } 
+  
+  40% {
+    text-shadow: 2px 2px 25px green;
+  }
+
+  60% {
+    text-shadow: 2px 2px 25px magenta;
+  }
+
+  80% {
+    text-shadow: 2px 2px 25px turquoise;
+  }
+
   to {
-    transform: rotate(360deg);
+    text-shadow: 2px 2px 25px magenta;
   }
 }
