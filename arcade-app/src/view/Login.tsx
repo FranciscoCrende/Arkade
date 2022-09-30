@@ -24,7 +24,7 @@ function Login() {
                 </div>
                 <input type="submit" value="Login" className="button"/>
                     <p>Al  registrarte ,  aceptas  nuestras  Condiciones  de  uso  y  Políticas  de  privacidad.</p>
-                    <p>¿No tienes una cuenta? <a className="link" href="register.html">Registrate </a></p>
+                    <p>¿No tienes una cuenta? <a className="link" href="/registro">Registrate </a></p>
             </div>
         </form>
     )
