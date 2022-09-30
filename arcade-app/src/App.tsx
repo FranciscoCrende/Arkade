@@ -22,7 +22,6 @@ function App() {
         <Route path="/registro" element={<Register/>} />
         <Route path="/score" element={<Score/>} />
         <Route path="/store" element={<Store/>} />
-        <Route path="/donkey" element={<Donkey/>} />
         
       </Routes>
     </div>

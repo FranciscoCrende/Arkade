@@ -5,7 +5,7 @@ import "../styles/styles-in.css"
 function Login() {
     return (
         <form className="formulario">
-
+            <a href="/principal">principal</a>  
             <h1 id="registerlog_text">INICIAR SESION</h1>
             <div className="contenedor">
 

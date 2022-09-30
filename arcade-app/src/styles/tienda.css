@@ -6,11 +6,11 @@
 }
 @font-face {
     font-family: fuenteAgregada;
-    src: url(../styles/ARCADECLASSIC.TTF);
+    src: url(./ARCADECLASSIC.TTF);
 }
 body{
     font-family: fuenteAgregada;
-    background-image: url(../img/Fondo.jpg);
+    background-image: url(http://localhost:3000/img/Fondo.jpg);
     background-repeat: no-repeat;
 }
 .back{
