@@ -1,11 +1,11 @@
 import React from "react";
-
+import "../styles/tienda.css"
 function Store() {
     return(
               
     <div className="container">
         <div className="back">
-            <a href="../view/principal.html">&#60 BACK</a>
+            <a href="/principal">BACK</a>
         </div>
         <div id="logo">
             ARKADE

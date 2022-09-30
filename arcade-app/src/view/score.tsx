@@ -5,6 +5,7 @@ function Score() {
                 <><div className="money">
             <img src="../img/coin.png" alt="" />1244
         </div><div id="logo">
+                <a className="btnback" href="/principal">BACK</a>
                 <h1>ARKADE</h1>
             </div><div className="hiscore">
                 <h2>hi-score: 12000</h2> <h2>player: jugador 1</h2>

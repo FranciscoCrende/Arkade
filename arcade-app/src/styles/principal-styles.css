@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: fuenteAgregada;
-    src: url(../styles/ARCADECLASSIC.TTF);
+    src: url(./ARCADECLASSIC.TTF);
 }
 .money{
     width: 50px;

@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/principal-styles.css"
+const { ipcRenderer } = require("electron")
+
+
 function Principal() {
     const [menuSeleccionado, setMenuSeleccionado] = useState(0);
 
@@ -20,6 +23,9 @@ function Principal() {
         window.removeEventListener('keydown', handleUserKeyPress);
       };
     });
+
+    const closeBtn = document.getElementById("closeBtn");
+    
     return (
         <div>
             <div className="money">
@@ -42,10 +48,11 @@ function Principal() {
             <div className="container-menu">
                 <ul>
                     <h1 className="enter">PRESS ENTER</h1>
-                    <li className="title-games"><Link to="/GalagaMenu">{menuSeleccionado == 0 && ">"} GALAGA</Link></li>
+                    <li className="title-games"><Link to="/galagaMenu">{menuSeleccionado == 0 && ">"} GALAGA</Link></li>
                     <li className="title-games"><Link to="/Donkey">{menuSeleccionado == 1 && ">"} </Link>DONKEY KONG</li>
-                    <li className="title-games"><Link to="/Tienda">{menuSeleccionado == 2 && ">"}TIENDA</Link></li>
-                    <li className="title-games"><Link to="/Score">{menuSeleccionado == 3 && ">"}SCORE</Link></li>
+                    <li className="title-games"><Link to="/store">{menuSeleccionado == 2 && ">"}TIENDA</Link></li>
+                    <li className="title-games"><Link to="/score">{menuSeleccionado == 3 && ">"}SCORE</Link></li>
+                    <button onClick={()=>ipcRenderer.send('closeApp')} id='closeBtn'>{menuSeleccionado == 4 && ">"}EXIT</button>
                 </ul>
             </div>
               
