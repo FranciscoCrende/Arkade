@@ -43,54 +43,58 @@ body{
 
 
 .letter-container{
-    
-    padding: 10px;
+    margin: 5vh;
     text-align: center;
-    margin: auto;
+    margin-top: 10vh;
   }
   
   .letter{ 
     color: white;
-    font-size: 50px;
+    font-size: 20vh;
     animation: letter-shadow infinite 2.5s linear;
   }
   
   .delay0{
-    animation-delay: 0.5s
+    animation-delay: 0s
   }
   .delay1{
-    animation-delay: 1s
+    animation-delay: 0.5s
   }.delay2{
-    animation-delay: 1.5s
+    animation-delay: 1s
   }.delay3{
-    animation-delay: 2s
+    animation-delay: 1.5s
   }.delay4{
-    animation-delay: 2.5s
+    animation-delay: 2s
   }
+  .delay5{
+   animation-delay: 2.5s
+  }
+
+
   
 
   @keyframes letter-shadow {
-    from{
-      text-shadow: 2px 2px 50px magenta;
+    0%{
+      text-shadow: 2px 2px 25px magenta;
     }
   
     20% {
-      text-shadow: 2px 2px 50px blue;
+      text-shadow: 2px 2px 25px blue;
     } 
     
     40% {
-      text-shadow: 2px 2px 50px green;
+      text-shadow: 2px 2px 25px red;
     }
   
     60% {
-      text-shadow: 2px 2px 50px magenta;
+      text-shadow: 2px 2px 25px magenta;
     }
   
     80% {
-      text-shadow: 2px 2px 50px turquoise;
+      text-shadow: 2px 2px 25px turquoise;
     }
   
-    to {
-      text-shadow: 2px 2px 50px magenta;
+    100% {
+      text-shadow: 2px 2px 25px magenta;
     }
   }
