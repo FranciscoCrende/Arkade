@@ -8,7 +8,7 @@ function GalagaMenu() {
                 <h1>ARKADE</h1>
             </div>
             <div className="container-menus">
-                <div>
+                
                     <h1 className="enter-menu">PRESS ENTER</h1>
                     <a className="options-menu">REANUDAR</a>
                     <a className="options-menu">REINICIAR</a>
@@ -16,7 +16,6 @@ function GalagaMenu() {
                     <a className="options-menu">INVENTARIO</a>
                     <a className="options-menu">SALIR</a>
 
-                </div>
             </div>
         </div>
 

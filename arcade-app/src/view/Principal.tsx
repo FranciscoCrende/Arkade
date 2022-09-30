@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import "../styles/principal-styles.css"
 function Principal() {
     const [menuSeleccionado, setMenuSeleccionado] = useState(0);
@@ -24,23 +25,33 @@ function Principal() {
             <div className="money">
                 <img src="../img/coin.png" alt="" />
             </div>
-            <div id="logo">
-                <h1>ARKADE</h1>
+
+
+
+            <div className='letter-container'>
+              {["A","R","K","A","D","E"].map((letter, i) =>
+
+              <span className={
+              
+              ["letter", `delay${i}`].join(" ")}>{letter}</span>
+              )
+           
+              }
+                
             </div>
             <div className="container-menu">
                 <ul>
                     <h1 className="enter">PRESS ENTER</h1>
-                    <li className="title-games"><a href="../view/galaga.html">{menuSeleccionado == 0 && ">"} GALAGA</a></li>
-                    <li className="title-games"><a href="../view/donkey.html">{menuSeleccionado == 1 && ">"} </a>DONKEY KONG</li>
-                    <li className="title-games"><a href="../view/tienda.html">{menuSeleccionado == 2 && ">"}TIENDA</a></li>
-                    <li className="title-games"><a href="../view/score.html">{menuSeleccionado == 3 && ">"}SCORE</a></li>
+                    <li className="title-games"><Link to="/GalagaMenu">{menuSeleccionado == 0 && ">"} GALAGA</Link></li>
+                    <li className="title-games"><Link to="/Donkey">{menuSeleccionado == 1 && ">"} </Link>DONKEY KONG</li>
+                    <li className="title-games"><Link to="/Tienda">{menuSeleccionado == 2 && ">"}TIENDA</Link></li>
+                    <li className="title-games"><Link to="/Score">{menuSeleccionado == 3 && ">"}SCORE</Link></li>
                 </ul>
             </div>
-            
+              
         </div>
     )
 
 }
 
 export default Principal;
-
