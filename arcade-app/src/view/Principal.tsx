@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import "../styles/principal-styles.css"
-const { ipcRenderer } = require("electron")
+const { ipcRenderer } = window.require("electron")
+
+
 
 
 function Principal() {
@@ -14,6 +17,16 @@ function Principal() {
         setMenuSeleccionado(menuSeleccionado + 1);
         console.log("dentro")
       }
+      if (keyCode === 38) {
+        setMenuSeleccionado(menuSeleccionado - 1);
+        console.log("dentro")  
+      }
+
+        if (keyCode === 13) {
+          setMenuSeleccionado(menuSeleccionado);
+          console.log("dentro") 
+      }
+        
     };
   
     useEffect(() => {

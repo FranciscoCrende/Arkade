@@ -1,11 +1,9 @@
 import React from 'react';
 import "../styles/styles-in.css"
-
-import "../styles/styles-in.css"
 function Login() {
     return (
         <form className="formulario">
-            <a href="/principal">principal</a>  
+            <a href="/principal">principal</a>
             <h1 id="registerlog_text">INICIAR SESION</h1>
             <div className="contenedor">
 
@@ -13,22 +11,22 @@ function Login() {
 
                 <div className="input-contenedor">
                     <i className="fas fa-envelope icon"></i>
-                    <input type="text" placeholder="Correo Electronico"/>
+                    <input type="text" placeholder="Correo Electronico" />
 
                 </div>
 
                 <div className="input-contenedor">
                     <i className="fas fa-key icon"></i>
-                    <input type="password" placeholder="Contraseña"/>
+                    <input type="password" placeholder="Contraseña" />
 
                 </div>
-                <input type="submit" value="Login" className="button"/>
-                    <p>Al  registrarte ,  aceptas  nuestras  Condiciones  de  uso  y  Políticas  de  privacidad.</p>
-                    <p>¿No tienes una cuenta? <a className="link" href="/registro">Registrate </a></p>
+                <input type="submit" value="Login" className="button" />
+                <p>Al  registrarte ,  aceptas  nuestras  Condiciones  de  uso  y  Políticas  de  privacidad.</p>
+                <p>¿No tienes una cuenta? <a className="link" href="/registro">Registrate </a></p>
             </div>
         </form>
     )
-    
+
 
 }
 export default Login;

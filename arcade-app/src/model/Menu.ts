@@ -1,5 +1,5 @@
 export default interface Menu {
-    link: string,
+    function: Function,
     title: string,
     selected: boolean
   }
