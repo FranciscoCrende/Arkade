@@ -16,9 +16,10 @@ function App() {
   <BrowserRouter>
     <div className="App">
       <Routes>
+        <Route path="/" element={<Principal/>} />
         <Route path="/principal" element={<Principal/>} />
         <Route path="/galagaMenu" element={<GalagaMenu/>} />
-        <Route path="/" element={<Login/>} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/registro" element={<Register/>} />
         <Route path="/score" element={<Score/>} />
         <Route path="/store" element={<Store/>} />
