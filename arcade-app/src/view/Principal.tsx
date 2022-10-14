@@ -1,57 +1,56 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Menu from '../models/Menu';
+import Menus from '../componenst/Menus';
 import "../styles/principal-styles.css"
+const { ipcRenderer } = window.require("electron")
+
+
+
+
 function Principal() {
-    const [menuSeleccionado, setMenuSeleccionado] = useState(0);
+  const [menuSeleccionado, setMenuSeleccionado] = useState(0);
+  const navigate = useNavigate()
 
-    const handleUserKeyPress = (event:KeyboardEvent) => {
-      const { key, keyCode } = event;
-        console.log("event", event)
-      if (keyCode === 40) {
-        setMenuSeleccionado(menuSeleccionado + 1);
-        console.log("dentro")
-      }
-    };
+
+  let menus: Menu[] = [
+
+    { title: "PRESS ENTER", function: () => navigate("/Principal")},
+    { title: "Juegos", function: () => navigate("/GalagaMenu") },
+    { title: "Puntaje", function: () => navigate("/score") },
+    { title: "Tienda", function: () => navigate("/store") },
+    { title: "Salir", function: () => ipcRenderer.send("closeApp") },
+    
+  ]
+  const closeBtn = document.getElementById("closeBtn");
+
+  return (
+    <div>
+      
+      <div className="money">
+        
+        <img src="../img/coin.png" alt="" />
+      </div>
+    
+      <div className='letter-container'>
+        
+        {["A", "R", "K", "A", "D", "E"].map((letter, i) =>
+    
+          <span className={ 
+
+            ["letter", `delay${i}`].join(" ")}>{letter}</span>
+            
+        )
+
+        }
+
+      </div>
+      <Menus menus={menus} />
+    </div>
   
-    useEffect(() => {
-      window.addEventListener('keydown', handleUserKeyPress);
-  
-      return () => {
-        window.removeEventListener('keydown', handleUserKeyPress);
-      };
-    });
-    return (
-        <div>
-            <div className="money">
-                <img src="../img/coin.png" alt="" />
-            </div>
-
-
-
-            <div className='letter-container'>
-              {["A","R","K","A","D","E"].map((letter, i) =>
-
-              <span className={
-              
-              ["letter", `delay${i}`].join(" ")}>{letter}</span>
-              )
-           
-              }
-                
-            </div>
-            <div className="container-menu">
-                <ul>
-                    <h1 className="enter">PRESS ENTER</h1>
-                    <li className="title-games"><Link to="/GalagaMenu">{menuSeleccionado == 0 && ">"} GALAGA</Link></li>
-                    <li className="title-games"><Link to="/Donkey">{menuSeleccionado == 1 && ">"} </Link>DONKEY KONG</li>
-                    <li className="title-games"><Link to="/Tienda">{menuSeleccionado == 2 && ">"}TIENDA</Link></li>
-                    <li className="title-games"><Link to="/Score">{menuSeleccionado == 3 && ">"}SCORE</Link></li>
-                </ul>
-            </div>
-              
-        </div>
-    )
+  )
 
 }
+
 
 export default Principal;
