@@ -6,8 +6,6 @@ import "../styles/principal-styles.css"
 const { ipcRenderer } = window.require("electron")
 
 
-
-
 function Principal() {
   const [menuSeleccionado, setMenuSeleccionado] = useState(0);
   const navigate = useNavigate()
@@ -16,13 +14,13 @@ function Principal() {
   let menus: Menu[] = [
 
     { title: "PRESS ENTER", function: () => navigate("/Principal")},
-    { title: "Juegos", function: () => navigate("/GalagaMenu") },
+    { title: "Galaga", function: () => navigate("/GalagaMenu") },
     { title: "Puntaje", function: () => navigate("/score") },
     { title: "Tienda", function: () => navigate("/store") },
     { title: "Salir", function: () => ipcRenderer.send("closeApp") },
     
   ]
-  const closeBtn = document.getElementById("closeBtn");
+  
 
   return (
     <div>
@@ -45,7 +43,9 @@ function Principal() {
         }
 
       </div>
+      <div className='menuP'>
       <Menus menus={menus} />
+      </div>
     </div>
   
   )

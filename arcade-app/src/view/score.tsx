@@ -1,13 +1,46 @@
-import React from "react";
+
+import "../styles/socre.css";
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import Menu from '../models/Menu';
+import Menus from '../componenst/Menus';
+import "../styles/principal-styles.css"
+const { ipcRenderer } = window.require("electron")
 
 function Score() {
-    return(
-                <><div className="money">
-            <img src="../img/coin.png" alt="" />1244
-        </div><div id="logo">
+    const [menuSeleccionado, setMenuSeleccionado] = useState(0);
+    const navigate = useNavigate()
+
+    let menus: Menu[] = [
+
+        { title: "PRESS ENTER", function: () => navigate("/Principal") },
+    ]
+    return (
+
+        <><div>
+
+            <div className="money">
+
+                <img src="../img/coin.png" alt="" />
+            </div>
+
+            <div className='letter-container'   >
+
+                {["A", "R", "K", "A", "D", "E"].map((letter, i) =>
+
+                    <span className={
+
+                        ["letter", `delay${i}`].join(" ")}>{letter}</span>
+                )}
+            </div>
+            <div className='menu-puntaje'>
+                <Menus menus={menus} />
+            </div>
+        </div>
+
+
+            <div className="hiscore">
                 <a className="btnback" href="/principal">BACK</a>
-                <h1>ARKADE</h1>
-            </div><div className="hiscore">
                 <h2>hi-score: 12000</h2> <h2>player: jugador 1</h2>
 
             </div><div className="container-score">
@@ -36,7 +69,7 @@ function Score() {
             </div></>
     )
 
- 
+
 }
 
 export default Score;
