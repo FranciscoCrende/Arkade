@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Menu from "../models/Menu";
 import MenuItem from "./MenuItem";
 
+
 function Menus({ menus }: {menus: Menu[] }) {
   const [selected, setSelected] = useState(-1);
 
@@ -12,7 +13,7 @@ function Menus({ menus }: {menus: Menu[] }) {
     console.log(keyCode)
     switch (keyCode) {
       case 40: //abajo
-        setSelected(actual => actual > menus.length ? 0 : actual + 1)
+        setSelected(actual => actual >= menus.length -1 ? 0 : actual + 1)
         break;
       case 38: //arriba
         setSelected(actual => actual <= 0 ? menus.length - 1 : actual - 1)
@@ -38,11 +39,7 @@ function Menus({ menus }: {menus: Menu[] }) {
     <div style={{ margin: 2, padding: 2, }}>
       {menus.map((menu, index) => {
         return <MenuItem
-          menu={{
-            title: menu.title,
-            function: menu.function,
-    
-          }}
+          menu= {menu}
           selected={index == selected}
         />
       })}
