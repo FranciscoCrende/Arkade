@@ -6,7 +6,7 @@ import Menu from "../models/Menu"
 
 
 function MenuItem({ menu, selected }: { menu: Menu, selected: boolean }) {
-  const { title } = menu
+  const { title, icon } = menu
   const ref = useRef<HTMLDivElement>(null!)
   useLayoutEffect(() => {
     ref.current.focus()
@@ -18,6 +18,7 @@ function MenuItem({ menu, selected }: { menu: Menu, selected: boolean }) {
         ref.current.focus()
         console.log("focus: ", ref.current.focus())
       }
+     
   }, [selected])
   return (
     <div
@@ -36,7 +37,7 @@ function MenuItem({ menu, selected }: { menu: Menu, selected: boolean }) {
 
       <div style={{
         display: "flex",
-        fontSize: selected ? "35px" : "30px",
+        fontSize: selected ? "32px" : "30px",
         
 
       }}>
@@ -45,6 +46,7 @@ function MenuItem({ menu, selected }: { menu: Menu, selected: boolean }) {
         {title}
       </div>
     </div>
+    
   )
 }
 

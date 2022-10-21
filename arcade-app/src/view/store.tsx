@@ -12,6 +12,11 @@ function Store() {
     let menus: Menu[] = [
 
         { title: "PRESS ENTER", function: () => navigate("/Principal") },
+        { title: "Pocion 1", function: () => navigate("/Principal"), icon: "pocion1.png" },
+        { title: "Pocion 2", function: () => navigate("/Principal"), icon: "pocion2.png" },
+        { title: "Pocion 3", function: () => navigate("/Principal"), icon: "pocion3.png" },
+        { title: "Pocion 4", function: () => navigate("/Principal"), icon: "manzana.png" },
+        { title: "Pocion 5", function: () => navigate("/Principal"), icon: "manzanad.png" },
     ]
     return (
 
@@ -35,14 +40,11 @@ function Store() {
             <div className='menu-tienda'>
                 <Menus menus={menus} />
             </div>
-
-            <div className="container-tienda">
-                <li className="pociones"><img className="img1" src="../img/manzana.png" alt="" />Pocion 1 <button>+</button></li>
-                <li className="pociones"><img className="img2" src="../img/pocion1.png" alt="" />Pocion 2 <button>+</button></li>
-                <li className="pociones"><img className="img3" src="../img/pocion2.png" alt="" />Pocion 3 <button>+</button></li>
-                <li className="pociones"><img className="img4" src="../img/manzanad.png" alt="" />Pocion 4 <button>+</button></li>
-                <li className="pociones"><img className="img5" src="../img/pocion3.png" alt="" />Pocion 5 <button>+</button></li>
-            </div>
+            <div className="tarjetap">
+                <h1>Pocion 1</h1>
+                <img className="pocion1" src="http://localhost:3000/img/pocion1.png" />
+                <p>Multiplica la velocidad del player x4</p>
+                    </div>
         </div>
     )
 }
