@@ -1,12 +1,12 @@
 @font-face {
     font-family: fuenteAgregada;
-    src: url(../styles/ARCADECLASSIC.TTF);
+    src: url(./ARCADECLASSIC.TTF);
 }
 
 
 body {
     font-family: fuenteAgregada;
-    background: url(../img/Fondo.jpg);
+    background: url(localhost:3000/img/Fondo.jpg);
     background-size: cover;
     background-attachment: fixed;
     

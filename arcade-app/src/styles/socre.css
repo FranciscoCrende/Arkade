@@ -3,15 +3,17 @@
     margin: 0;
     padding: 0;
     list-style: none;
+   
 }
 @font-face {
     font-family: fuenteAgregada;
-    src: url(../styles/ARCADECLASSIC.TTF);
+    src: url(./ARCADECLASSIC.TTF);
 }
 body{
     font-family: fuenteAgregada;
-    background-image: url(../img/Fondo.jpg);
+    background-image: url("http://localhost:3000/img/Fondo.jpg");
     background-repeat: no-repeat;
+   
 }
 #logo{
     color: #fff;
@@ -31,26 +33,36 @@ body{
 }
 .container-score{
     font-size: 25px;
-    width: 350px;
-    height: 350px;
-    color: #fff;
+   
+ 
+    
+}
+.table-score {
     margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .hiscore{
     display: flex;
     width: 400px;
     margin: auto;
-    color: rgb(3, 169, 164);
+    align-items: center;
+    justify-content: center;
+
 }
 h2{
     padding: 10px;
     font-size: 20px;
 }
-.container-score table{
+.container-score taale{
     padding: 0px;
 }
 th, td{
-    padding: 20px;
+    padding: 15px;
+}
+th {
+    margin-top: 40px;
 }
 .fila1{
     color: rgb(195, 0, 123);
@@ -63,4 +75,7 @@ th, td{
 }
 .fila4{
 color: rgb(0, 38, 152);
+}
+.menu-puntaje {
+    margin-bottom: 5vh;
 }

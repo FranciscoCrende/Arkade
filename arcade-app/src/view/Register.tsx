@@ -27,7 +27,7 @@ function Register() {
                     </div>
                     <input type="submit" value="Registrate" className="button" />
                     <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-                    <p>¿Ya tienes una cuenta?<a className="link" href="log-in.html">Iniciar Sesion</a></p>
+                    <p>¿Ya tienes una cuenta?<a className="link" href="/">Iniciar Sesion</a></p>
                 </div>
             </form>
         </div>
