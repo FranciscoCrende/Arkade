@@ -47,45 +47,6 @@ function Principal() {
       <Menus menus={menus} />
       </div>
     </div>
-  
-      return () => {
-        window.removeEventListener('keydown', handleUserKeyPress);
-      };
-    });
-    return (
-        <div>
-            <div className="money">
-                <img src="../img/coin.png" alt="" />
-            </div>
-
-
-
-            <div className='letter-container'>
-              {["A","R","K","A","D","E"].map((letter, i) =>
-
-              <span className={
-              
-              ["letter", `delay${i}`].join(" ")}>{letter}</span>
-              )
-           
-              }
-
-            
-                
-            <button>Galaga<link rel="Galaga" href="" /></button>
-            
-            </div>
-            <div className="container-menu">
-                <ul>
-                    <h1 className="enter">PRESS ENTER</h1>
-                    <li className="title-games"><a href="../view/galaga.html">{menuSeleccionado == 0 && ">"} GALAGA</a></li>
-                    <li className="title-games"><a href="../view/donkey.html">{menuSeleccionado == 1 && ">"} </a>DONKEY KONG</li>
-                    <li className="title-games"><a href="../view/tienda.html">{menuSeleccionado == 2 && ">"}TIENDA</a></li>
-                    <li className="title-games"><a href="../view/score.html">{menuSeleccionado == 3 && ">"}SCORE</a></li>
-                </ul>
-            </div>
-              
-        </div>
     )
 
 }
