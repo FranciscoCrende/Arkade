@@ -47,8 +47,7 @@ function Principal() {
       <Menus menus={menus} />
       </div>
     </div>
-  
-  )
+    )
 
 }
 
