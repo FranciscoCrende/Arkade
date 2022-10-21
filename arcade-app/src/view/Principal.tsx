@@ -36,7 +36,11 @@ function Principal() {
               )
            
               }
+
+            
                 
+            <button>Galaga<link rel="Galaga" href="" /></button>
+            
             </div>
             <div className="container-menu">
                 <ul>
