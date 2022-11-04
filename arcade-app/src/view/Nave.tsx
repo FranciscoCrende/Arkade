@@ -13,7 +13,7 @@ function Nave({up,left}: NaveProps) {
                     left: left + "px",
                     top: up + "px"
                 }}>
-                <img height="50px" src="/img/Galaga-PNG-Background.png" />
+                <img height="34px" src="/img/Galaga-PNG-Background.png" />
             </div>
 
 

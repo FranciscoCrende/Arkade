@@ -8,6 +8,7 @@ import GalagaMenu from './view/GalagaMenu';
 import Register from './view/Register';
 import Score from './view/score';
 import Store from './view/store';
+import Galaga from './view/galaga';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Principal/>} />
         <Route path="/principal" element={<Principal/>} />
         <Route path="/galagaMenu" element={<GalagaMenu/>} />
+        <Route path="/GalagaGame" element={<Galaga/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/registro" element={<Register/>} />
         <Route path="/score" element={<Score/>} />
