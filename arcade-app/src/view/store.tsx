@@ -11,16 +11,15 @@ import "../styles/tienda.css"
 function Store() {
     const [menuSeleccionado, setMenuSeleccionado] = useState(0);
     const navigate = useNavigate()
-    const items: { menu: Menu, description: string }[] = [
-        { menu: { title: "Pocion 1", function: () => navigate("/Principal"), icon: "pocion1.png" }, description: "Esta pocion otorgara a la nave un x2 de volocidad de disparo" },
-        { menu: { title: "Pocion 2", function: () => navigate("/Principal"), icon: "pocion2.png" }, description: "Esta pocion otorgara al player resistancia a los tres primeros golpes"  },
-        { menu: { title: "Pocion 3", function: () => navigate("/Principal"), icon: "pocion3.png" }, description: "Esta pocion otorgara al player "  },
-        { menu: { title: "Pocion 4", function: () => navigate("/Principal"), icon: "manzana.png" }, description: "Esta pocion otorgara al de velocidad"  },
-        { menu: { title: "Pocion 5", function: () => navigate("/Principal"), icon: "manzanad.png" }, description: "Esta pocion otorgara al player un x2 de velocidad"  },
-    ]
+
+
     let menus: Menu[] = [
         { title: "PRESS ENTER", function: () => navigate("/Principal") },
-        ...items.map(i => i.menu)
+        { title: "Choque", function: () => navigate("/Principal"), description: { text: "Choque", img: "/img/proteccion.webp", descripcion: "Tomando esta poción al impactar con 2 naves enemigas estas se destruiran"} },
+        { title: "Bomba", function: () => navigate("/Principal"), description: { text: "Bomba", img: "/img/bomba.webp", descripcion: "Tomando esta poción tu nave disparara 3 bombas que maten enemigos cercanos" } },
+        { title: "Multi", function: () => navigate("/Principal"), description: { text: "Multi", img: "/img/multiplicador.webp", descripcion: "Tomando esta poción se multiplicara x2 la obtencion de puntos" } },
+        { title: "Vida", function: () => navigate("/Principal"), description: { text: "Vida", img: "/img/vida.webp", descripcion: "Tomando esta poción obtendras una vida adicional" } },
+        { title: "Escudo", function: () => navigate("/Principal"), description: { text: "Escudo", img: "/img/escudo.webp", descripcion: "Tomando esta poción tu nave obtendra un escudo resistente a 3 disparos enemigos" } },
     ]
     return (
 
@@ -44,11 +43,8 @@ function Store() {
             <div className='menu-tienda'>
                 <Menus menus={menus} />
             </div>
-            <div className="tarjetap">
-                <h1>Pocion 1</h1>
-                <img className="pocion1" src="http://localhost:3000/img/pocion1.png" />
-                <p>Multiplica la velocidad del player x4</p>
-            </div>
+
+
         </div>
     )
 }

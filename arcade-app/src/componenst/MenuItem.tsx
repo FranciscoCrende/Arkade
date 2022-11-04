@@ -6,7 +6,7 @@ import Menu from "../models/Menu"
 
 
 function MenuItem({ menu, selected }: { menu: Menu, selected: boolean }) {
-  const { title, icon } = menu
+  const { title } = menu
   const ref = useRef<HTMLDivElement>(null!)
   useLayoutEffect(() => {
     ref.current.focus()
