@@ -10,7 +10,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     
-    
 }
 * {
     box-sizing: border-box;
@@ -83,6 +82,7 @@ p{
     text-align: center;
     letter-spacing: 3px;
     padding: 10px 0;
+    color: #1a2537;
 }
 .link{
     text-decoration: none;
@@ -95,7 +95,7 @@ p{
 
 input {
     font-family: fuenteAgregada;
-    
+    color: #1a2537;
     
 }
 

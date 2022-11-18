@@ -1,9 +1,9 @@
 
-import "../styles/socre.css";
+import "../styles/score.css";
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Menu from '../models/Menu';
-import Menus from '../componenst/Menus';
+import Menus from '../components/Menus';
 import "../styles/tienda.css"
 
 

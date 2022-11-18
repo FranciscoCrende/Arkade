@@ -1,5 +1,6 @@
 import { getElementError, logDOM } from "@testing-library/react";
 import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import NaveModel from "../models/NaveModel";
 import ShotModel from "../models/ShotModel";
 import Enemie from "./Enemy";
