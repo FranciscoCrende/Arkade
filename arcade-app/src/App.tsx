@@ -6,9 +6,10 @@ import Principal from './view/Principal';
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import GalagaMenu from './view/GalagaMenu';
 import Register from './view/Register';
-import Score from './view/score';
-import Store from './view/store';
-import Galaga from './view/galaga';
+import Score from './view/Score';
+import Store from './view/Store';
+import Galaga from './view/Galaga';
+import Pause from './view/Pause';
 
 
 function App() {
@@ -17,14 +18,14 @@ function App() {
   <BrowserRouter>
     <div className="App">
       <Routes>
-        <Route path="/" element={<Principal/>} />
+        <Route path="/" element={<Login/>} />
         <Route path="/principal" element={<Principal/>} />
         <Route path="/galagaMenu" element={<GalagaMenu/>} />
         <Route path="/GalagaGame" element={<Galaga/>} />
-        <Route path="/login" element={<Login/>} />
         <Route path="/registro" element={<Register/>} />
         <Route path="/score" element={<Score/>} />
         <Route path="/store" element={<Store/>} />
+
         
       </Routes>
     </div>
