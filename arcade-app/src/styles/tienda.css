@@ -1,87 +1,99 @@
-*{
+* {
     text-decoration: none;
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 @font-face {
     font-family: fuenteAgregada;
     src: url(./ARCADECLASSIC.TTF);
 }
-body{
+
+body {
     font-family: fuenteAgregada;
     background-image: url(http://localhost:3000/img/Fondo.jpg);
     background-repeat: no-repeat;
 }
-.back{
+
+.back {
     font-size: 15px;
     color: #fff;
     margin-top: 40px;
 }
-.back a:hover{
+
+.back a:hover {
     font-size: 20px;
 }
-.container{
+
+.container {
     width: 100%;
     height: 100%;
 }
-.container-tienda{
+
+.container-tienda {
     background-color: rgba(215, 67, 215, 0.589);
     color: black;
-    border: 1px solid   #fff;
+    border: 1px solid #fff;
     margin: auto;
     width: 350px;
     height: 350px;
 }
-.pociones{
+
+.pociones {
     margin-left: 5px;
     padding: 10px;
 }
-#logo{
+
+#logo {
     color: #fff;
     font-size: 60px;
     text-align: center;
     margin-top: 40px;
     width: 100%
 }
-.container-tienda button{
+
+.container-tienda button {
     border-radius: 10px;
     cursor: pointer;
 }
-.pociones img{
+
+.pociones img {
     width: 15px;
 }
+
 .tarjetap {
     height: 170px;
     width: 200px;
     text-align: center;
     margin: auto;
-    background-color: aquamarine;
-    margin-top: 10px;
+     margin-top: 10px;
 }
+
 .pocion1 {
     width: 60px;
     height: 60px;
 }
-.messielmejor {
-    background-color: aqua;
-}
+
 .etiqueta-container {
     margin: auto;
     height: 170px;
     width: 300px;
     display: flex;
-    border: 8px ridge #791780; 
+    border: 8px ridge #791780;
     background-color: black;
     justify-content: flex-start;
     margin-top: 20px;
     text-align: center;
     flex-direction: column;
     align-items: center;
-   
+    
+
 }
+
 .etiqueta-img {
     height: 70px;
     width: 70px;
     margin-top: 10px;
+
 }

@@ -13,41 +13,41 @@ function Principal() {
 
   let menus: Menu[] = [
 
-    { title: "PRESS ENTER", function: () => navigate("/Principal")},
+    { title: "PRESS ENTER", function: () => navigate("/Principal") },
     { title: "Galaga", function: () => navigate("/GalagaMenu") },
     { title: "Puntaje", function: () => navigate("/score") },
     { title: "Tienda", function: () => navigate("/store") },
     { title: "Salir", function: () => ipcRenderer.send("closeApp") },
-    
+
   ]
-  
+
 
   return (
     <div>
-      
+
       <div className="money">
-        
+
         <img src="../img/coin.png" alt="" />
       </div>
-    
+
       <div className='letter-container'>
-        
+
         {["A", "R", "K", "A", "D", "E"].map((letter, i) =>
-    
-          <span className={ 
+
+          <span className={
 
             ["letter", `delay${i}`].join(" ")}>{letter}</span>
-            
+
         )
 
         }
 
       </div>
       <div className='menuP'>
-      <Menus menus={menus} />
+        <Menus menus={menus} />
       </div>
     </div>
-    )
+  )
 
 }
 

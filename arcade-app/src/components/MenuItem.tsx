@@ -1,4 +1,5 @@
 
+
 import { height } from "@mui/system"
 import { url } from "inspector"
 import { useEffect, useLayoutEffect, useRef } from "react"
@@ -18,7 +19,7 @@ function MenuItem({ menu, selected }: { menu: Menu, selected: boolean }) {
         ref.current.focus()
         console.log("focus: ", ref.current.focus())
       }
-     
+
   }, [selected])
   return (
     <div
@@ -28,7 +29,9 @@ function MenuItem({ menu, selected }: { menu: Menu, selected: boolean }) {
         height: "100%",
         display: "flex",
         flexDirection: "row",
-        justifyContent: "center"
+        justifyContent: "center",
+        alignItems: "center"
+
 
       }}
       onFocus={() => console.log(title)}
@@ -38,7 +41,7 @@ function MenuItem({ menu, selected }: { menu: Menu, selected: boolean }) {
       <div style={{
         display: "flex",
         fontSize: selected ? "32px" : "30px",
-        
+
 
       }}>
         <img className="imgPrincipal" src="http://localhost:3000/img/play.png" style={{ display: selected ? "block" : "none", width: 'auto', height: '17px', }} />
@@ -46,7 +49,7 @@ function MenuItem({ menu, selected }: { menu: Menu, selected: boolean }) {
         {title}
       </div>
     </div>
-    
+
   )
 }
 

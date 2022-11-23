@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import { useNavigate } from "react-router-dom";
 import Menus from "../components/Menus";
 import Menu from "../models/Menu";
@@ -14,11 +14,20 @@ function Pause({toExit}:{toExit:()=>void}) {
     ]
     return (
 
-        <div className='menuP'>
+        <div className='menuP' style={{ 
+            display: "flex",
+            height: "100%",
+            flexDirection: "column",
+            justifyContent: "center",
+           
+         }}>
 
                 <h1 style={{ 
+                    
                     textAlign:"center",
-                    fontSize:"50px"
+                    fontSize:"50px",
+                  
+                    
                  }}>Pausa</h1>
             
             

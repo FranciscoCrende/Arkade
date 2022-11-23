@@ -47,14 +47,15 @@ function Menus({ menus }: { menus: Menu[] }) {
       })}
       {menus[selected].description &&
         <div className="etiqueta-container">
-        
+
           <img className="etiqueta-img" src={menus[selected].description!.img} />
-          <p 
-          style={{
-            fontSize: selected ? "12px" : "12px",
+          <p
+            style={{
+              fontSize: selected ? "12px" : "12px",
+              color: "white"
 
 
-          }}>
+            }}>
             {menus[selected].description!.descripcion}
           </p>
 

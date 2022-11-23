@@ -3,7 +3,7 @@ const path = require('path')
 
 function createWindow() {
     const win = new BrowserWindow({
-        width: 1200,
+        width: 1100,
         height: 600,
         minWidth: 600,
         minHeight: 480,
@@ -20,6 +20,11 @@ function createWindow() {
         win.minimize()
     })
 
+    
+    ipcMain.on('fullscren', () => {
+        win.fullScreen = true
+    })
+
     ipcMain.on('maximizeRestoreApp', () => {
         if (win.isMaximized()) win.unmaximize()
         else win.maximize()
@@ -28,9 +33,7 @@ function createWindow() {
         win.close()
     })
 
-    win.on("maximize", () => {
-        win.webContents.send("isMaximized")
-      })
+
       win.on("unmaximize", () => {
         win.webContents.send("isRestored")
       })

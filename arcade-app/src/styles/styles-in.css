@@ -32,6 +32,7 @@ body {
 .formulario{
     background:  #ececf2 ;
     padding: 3px;
+    cursor: default;
 }
 #registerlog_text{
     text-align: center;
@@ -63,7 +64,7 @@ input:focus{
     text-align: center;
     color: #999;
 }
-.button{
+.fullscren{
     border: none;
     width: 100%;
     color: white;
@@ -73,6 +74,7 @@ input:focus{
     border-radius: 5px;
     cursor: pointer;
     background: linear-gradient( #258fe2 ,#212068  );
+    font-family: fuenteAgregada;
       
 }
 .button:hover{
