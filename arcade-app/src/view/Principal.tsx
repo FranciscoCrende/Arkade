@@ -19,6 +19,7 @@ function Principal() {
     { title: "Tienda", function: () => navigate("/store") },
     { title: "Salir", function: () => ipcRenderer.send("closeApp") },
 
+  
   ]
 
 

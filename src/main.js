@@ -22,7 +22,7 @@ function createWindow() {
 
     
     ipcMain.on('fullscren', () => {
-        win.fullScreen = true
+        win.maximize()
     })
 
     ipcMain.on('maximizeRestoreApp', () => {
